@@ -4,13 +4,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
   if (!isLoggedIn) {
     alert("You are not logged in! Redirecting to Sign In...");
-    window.location.href = "signin.html";
+    window.location.href = "signIn.html";
   }
 
   document.getElementById("logout-btn").addEventListener("click", function () {
     localStorage.removeItem("isLoggedIn");
     alert("Logged out successfully!");
-    window.location.href = "signin.html";
+    window.location.href = "signIn.html";
   });
 
   const sidebar = document.querySelector(".sidebar");
@@ -18,12 +18,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
   toggleBtn.addEventListener("click", function () {
     sidebar.classList.toggle("collapsed");
-  });
-
-  document.querySelector(".logout").addEventListener("click", function () {
-    localStorage.removeItem("isLoggedIn");
-    alert("Logged out successfully!");
-    window.location.href = "signin.html";
   });
 
   populateShowGrid();
