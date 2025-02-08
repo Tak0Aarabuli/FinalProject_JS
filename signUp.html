@@ -5,21 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup Page</title>
     <link rel="stylesheet" href="assets/css/signUp.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
   </head>
   <body>
     <div class="left-section">
-        <img src="assets/images/popcornGirl.jpg" alt="Movie Watching" />
-        <p class="testimonial">
-          Strean helps us to maintain our relationship to become much much
-          better than previously
-        </p>
-        <p class="author"><strong>Janne Malayika</strong></p>
+      <img src="assets/images/popcornGirl.jpg" alt="Movie Watching" />
+      <p class="testimonial">
+        Strean helps us to maintain our relationship to become much much better
+        than previously
+      </p>
+      <p class="author"><strong>Janne Malayika</strong></p>
     </div>
     <div class="signup-container">
-      <!-- Left Section with Image & Text -->
-   
-
-      <!-- Right Section with Signup Form -->
       <div class="right-section">
         <p class="small-text">START SIGN UP</p>
         <h1 class="title">Explore Movie</h1>
@@ -54,9 +51,17 @@
 
           <button type="submit" class="submit-btn">Continue</button>
         </form>
+        <button
+          type="button"
+          class="other-btn"
+          onclick="window.location.href='signIn.html'"
+        >
+          Go To Sign In Page
+        </button>
       </div>
     </div>
-
+    
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/signUp.js"></script>
   </body>
 </html>

@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Dashboard</title>
-    <link rel="stylesheet" href="assets/css/dashboard.css" />
-    <script defer src="assets/js/dashboard.js"></script>
+    <link rel="stylesheet" href="assets/css/discover.css" />
+    <script defer src="assets/js/discover.js"></script>
   </head>
   <body>
     <div class="dashboard">
@@ -24,7 +24,7 @@
               alt="Discover"
               class="menu-icon"
             />
-            <span><a href="discover.html">Discover</a> </span>
+            <span><a href="discover.html">Discover</a></span>
           </li>
           <li>
             <img
@@ -70,7 +70,6 @@
         </ul>
       </nav>
 
-      <!-- Main Content -->
       <div class="main-content">
         <header>
           <h1>Watch Today</h1>
@@ -79,25 +78,14 @@
             <img src="assets/icons/account.png" alt="User Profile" />
           </div>
         </header>
-        <div class="slider-container">
-          <h2>Continue Watching</h2>
-          <div class="slider-wrapper">
-            <button class="prev" onclick="scrollSlider(-1)">&#10094;</button>
-            <div class="slider" id="tvShowSlider">
-              <!-- TV show items will be injected here -->
-            </div>
-            <button class="next" onclick="scrollSlider(1)">&#10095;</button>
-          </div>
-        </div>
+        <div class="show-container">
+          <h2>TV Shows</h2>
+          <div class="show-grid" id="showGrid"></div>
 
-        <div class="cast-slider-container">
-          <h2>Cast</h2>
-          <div class="cast-slider-wrapper">
-            <button class="prev" onclick="scrollSlider1(-1)">&#10094;</button>
-            <div class="cast-slider" id="castSlider">
-              <!-- Cast members will be injected here -->
-            </div>
-            <button class="next" onclick="scrollSlider1(1)">&#10095;</button>
+          <div class="pagination">
+            <button id="prevPage" onclick="changePage(-1)">Previous</button>
+            <span id="pageNumber">Page 1</span>
+            <button id="nextPage" onclick="changePage(1)">Next</button>
           </div>
         </div>
       </div>

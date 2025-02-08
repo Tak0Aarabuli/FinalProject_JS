@@ -3,9 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="assets/css/dashboard.css" />
-    <script defer src="assets/js/dashboard.js"></script>
+    <title>Episode Details</title>
+    <link rel="stylesheet" href="assets/css/show.css" />
   </head>
   <body>
     <div class="dashboard">
@@ -24,7 +23,7 @@
               alt="Discover"
               class="menu-icon"
             />
-            <span><a href="discover.html">Discover</a> </span>
+            <span><a href="discover.html">Discover</a></span>
           </li>
           <li>
             <img
@@ -70,37 +69,27 @@
         </ul>
       </nav>
 
-      <!-- Main Content -->
-      <div class="main-content">
-        <header>
-          <h1>Watch Today</h1>
-          <p>Our selected movies for your mood</p>
-          <div class="profile">
-            <img src="assets/icons/account.png" alt="User Profile" />
+      <div class="content">
+        <a href="discover.html" class="back-button"></a>
+        <div class="episode-container">
+          <div class="episode-image">
+            <img id="episode-image" src="" alt="Episode Image" />
+            <div class="play-button">▶</div>
           </div>
-        </header>
-        <div class="slider-container">
-          <h2>Continue Watching</h2>
-          <div class="slider-wrapper">
-            <button class="prev" onclick="scrollSlider(-1)">&#10094;</button>
-            <div class="slider" id="tvShowSlider">
-              <!-- TV show items will be injected here -->
-            </div>
-            <button class="next" onclick="scrollSlider(1)">&#10095;</button>
-          </div>
-        </div>
-
-        <div class="cast-slider-container">
-          <h2>Cast</h2>
-          <div class="cast-slider-wrapper">
-            <button class="prev" onclick="scrollSlider1(-1)">&#10094;</button>
-            <div class="cast-slider" id="castSlider">
-              <!-- Cast members will be injected here -->
-            </div>
-            <button class="next" onclick="scrollSlider1(1)">&#10095;</button>
+          <div class="episode-details">
+            <h1 id="episode-title"></h1>
+            <p class="meta-info">
+              <span id="episode-year"></span> |
+              <span id="episode-genres"></span>
+            </p>
+            <p class="rating">⭐ <span id="episode-rating"></span></p>
+            <h3>About</h3>
+            <p id="episode-summary"></p>
           </div>
         </div>
       </div>
     </div>
+
+    <script src="assets/js/show.js"></script>
   </body>
 </html>

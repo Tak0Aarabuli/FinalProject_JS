@@ -1,4 +1,3 @@
-/* General Styles */
 body {
   background-color: #0a071b;
   background-image: url("../images/Bg.png");
@@ -7,21 +6,21 @@ body {
   height: 100vh;
   font-family: Arial, sans-serif;
   margin: 0;
+  overflow: hidden;
+  max-width: 100vw;
 }
 
-/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 95vw; /* Adjust width for better spacing */
+  width: 95vw;
   padding: 15px 30px;
 }
 
-/* Left Menu */
 .left-menu {
   display: flex;
-  gap: 20px; /* Space between items */
+  gap: 20px;
 }
 
 .left-menu a {
@@ -31,7 +30,6 @@ body {
   font-weight: bold;
 }
 
-/* Center Title */
 .center-title {
   font-size: 48px;
   font-weight: bold;
@@ -40,7 +38,6 @@ body {
   text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.3);
 }
 
-/* Right Menu */
 .right-menu {
   display: flex;
   align-items: center;
@@ -64,23 +61,20 @@ body {
   color: #0a071b;
 }
 
-/* Main Content */
 .main-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   text-align: center;
-  margin-top: 50px; /* Adds space between navbar and main content */
+  margin-top: 50px;
 }
 
-/* Container */
 .container {
   max-width: 600px;
   padding: 20px;
 }
 
-/* Small Text */
 .small-text {
   font-size: 14px;
   color: #00bfff;
@@ -88,7 +82,6 @@ body {
   text-transform: uppercase;
 }
 
-/* Main Heading */
 .main-heading {
   font-size: 40px;
   font-weight: bold;
@@ -96,14 +89,12 @@ body {
   color: white;
 }
 
-/* Subtext */
 .subtext {
   font-size: 16px;
   color: rgba(255, 255, 255, 0.7);
   margin-bottom: 20px;
 }
 
-/* Call-to-Action Button */
 .cta-button {
   background: linear-gradient(90deg, #6c5ce7, #4834d4);
   color: white;
@@ -120,7 +111,6 @@ body {
   opacity: 0.8;
 }
 
-/* Video Section */
 .video-section {
   display: flex;
   flex-direction: column;
@@ -129,7 +119,6 @@ body {
   margin-top: 50px;
 }
 
-/* Video Container */
 .video-container {
   position: relative;
   width: 600px;
@@ -139,14 +128,12 @@ body {
   box-shadow: 0px 0px 80px -10px rgba(101, 77, 255, 0.51);
 }
 
-/* Video Thumbnail */
 .video-thumbnail {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-/* Play Button */
 .play-button {
   position: absolute;
   top: 50%;
@@ -171,7 +158,6 @@ body {
   color: white;
 }
 
-/* Platforms Section */
 .platforms {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -183,7 +169,7 @@ body {
 }
 
 .platform img {
-  width: 20px; /* Adjust the size */
+  width: 20px;
   height: 20px;
   margin-right: 5px;
 }

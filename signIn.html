@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signup Page</title>
     <link rel="stylesheet" href="assets/css/signUp.css" />
+    <link rel="stylesheet" href="assets/css/modal.css" />
   </head>
   <body>
     <div class="left-section">
@@ -16,9 +17,6 @@
       <p class="author"><strong>Janne Malayika</strong></p>
     </div>
     <div class="signup-container">
-      <!-- Left Section with Image & Text -->
-
-      <!-- Right Section with Signup Form -->
       <div class="right-section">
         <p class="small-text">START YOUR DAY</p>
         <h1 class="title">Watch New Movie</h1>
@@ -44,9 +42,17 @@
 
           <button type="submit" class="submit-btn">Continue</button>
         </form>
+
+        <button
+          type="button"
+          class="other-btn"
+          onclick="window.location.href='signUp.html'"
+        >
+          Go To Sign Up Page
+        </button>
       </div>
     </div>
-
+    <script src="assets/js/modal.js"></script>
     <script src="assets/js/signIn.js"></script>
   </body>
 </html>
