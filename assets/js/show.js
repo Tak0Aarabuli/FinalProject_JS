@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   document.querySelector(".logout").addEventListener("click", function () {
     localStorage.removeItem("isLoggedIn");
     alert("Logged out successfully!");
-    window.location.href = "signin.html";
+    window.location.href = "signIn.html";
   });
 
   const urlParams = new URLSearchParams(window.location.search);
